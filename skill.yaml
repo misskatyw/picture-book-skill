@@ -1,0 +1,5 @@
+name: picture_book
+title: 個人化兒童繪本
+description: 為 0–6 歲小朋友製作個人化繪本：開工前先問清幾歲、男仔女仔、單語／雙語／三語、一行幾多隻字、幾多頁、揀畫風，並拎家庭相做人物參考；內文用加大字體（中文 24pt／英文 23pt 起）。觸發：整繪本、picture book、故事書、幫小朋友整本書
+category: "Family and creativity"
+include_in_prompt: true

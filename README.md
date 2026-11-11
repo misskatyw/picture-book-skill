@@ -1,0 +1,39 @@
+# picture-book-skill — 個人化兒童繪本
+
+一個俾 AI 助手用嘅 skill：幫家長將小朋友嘅成長里程碑整成一本
+以小朋友自己做主角嘅個人化繪本（PDF）。
+
+## 特色
+
+- **開工前問卷**：開工前先問清小朋友幾歲、男仔定女仔、單語／雙語／三語、
+一行最多幾多隻字、總共幾多頁，唔估、唔跳步
+- **揀畫風**：溫柔水彩／扁平卡通／粉彩蠟筆／日系清新／簡約線條，或者自備參考圖；
+先試一頁封面，確認先批量生圖
+- **家庭相做參考**：用家長上載嘅家庭相整理人物設定表（髮型、眼鏡、標誌服飾），
+畫出嚟嘅主角同屋企人先會似返本人
+- **加大字體版面**：內文中文 24pt／英文 23pt 起（按年齡最高 28／26pt），
+細過嘅小朋友都睇得清；文字太多就改短句，唔縮字
+- **每行字數硬上限**：按年齡定每行字數，逐行檢查，幼兒唔使追長句
+
+## 點用
+
+1. 將 `SKILL.md` 交俾你嘅 AI 助手（或者放入佢嘅 skills 目錄）。
+2. 同助手講「幫我整本繪本」，佢會先俾一份你填。
+3. 填好問卷、上載家庭相，確認人物設定表同逐頁文字稿，再確認封面試版。
+4. 助手會生圖並用 `build_pdf_template.py` 砌成 A4 橫版 PDF。
+
+## 檔案
+
+- `SKILL.md` — 完整流程：問卷 → 人物設定 → 故事 → 試版 → 生圖 → 砌 PDF → 檢查
+- `build_pdf_template.py` — 砌 PDF 範本（ReportLab），已內置加大字體規格
+同每行字數超限警告；需要 Noto Sans TC 字款（Regular／Bold）放喺同目錄
+- `examples/trial-run.md` — 一次完整試跑示範（問卷填寫 → 設定表 → 逐頁稿）
+- `examples/images-trial/` — 試跑示範《小晴自己刷牙仔》嘅 4 張水彩頁圖
+
+## 私隱
+
+家庭相只用嚟做該次繪本嘅人物外貌參考，唔應用嚟建立人臉識別模板，
+亦唔應該用喺其他作品。
+
+Made with Muse — originally built for a Hong Kong mum making milestone
+picture books for her daughter, now shared so other families can make their own.
